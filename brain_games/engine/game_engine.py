@@ -18,5 +18,4 @@ def run_game(logic, rule, name):
                   f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             return
-
-        print(f"Congratulations, {name}!")
+    print(f"Congratulations, {name}!")

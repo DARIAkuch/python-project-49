@@ -1,8 +1,7 @@
 from random import randint
 
-from brain_games.cli import welcome_user
+from brain_games.engine.game_engine import run_game
 
-import prompt
 
 def generate_progression(start, step, length):
     return[start + i * step for i in range(length)]
@@ -19,26 +18,10 @@ def make_question_answer():
     question = progression_string
     return question, correct_answer
 
-def brain_progression():
-    name = welcome_user()
-    rule = 'What number is missing in the progression?'
-    print(rule)
-    counter = 0
-    while counter < 3:
-        question, correct_answer = make_question_answer()
-        print(f"Question: {question}")
-        user_answer = prompt.string('Your answer: ')
-        if user_answer == correct_answer:
-            print('Correct!')
-            counter = counter + 1
-        else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'. "
-                  f"Let's try again, {name}")
-            return
-    print(f'Congratulations, {name}')
 
 def main():
-    brain_progression()
+    game_rule = 'What number is missing in the progression?'
+    run_game(make_question_answer, game_rule, "Progression Game")
 
 if __name__ == '__main__':
     main()
