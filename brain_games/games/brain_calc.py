@@ -1,6 +1,6 @@
 import random
 
-from brain_games.engine.game_engine import run_game
+from brain_games.scripts.game_engine import run_game
 
 def generate_question():
     a = random.randint(1, 100)

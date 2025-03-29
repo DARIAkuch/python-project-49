@@ -4,7 +4,7 @@ from math import gcd
 
 import prompt
 
-from brain_games.engine.game_engine import run_game
+from brain_games.scripts.game_engine import run_game
 
 def generate_question():
     right_num = random.randint(1, 100)

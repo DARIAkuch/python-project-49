@@ -1,6 +1,6 @@
 from random import randint
 
-from brain_games.engine.game_engine import run_game
+from brain_games.scripts.game_engine import run_game
 
 
 def generate_progression(start, step, length):

@@ -1,6 +1,6 @@
 import random
 
-from brain_games.engine.game_engine import run_game
+from brain_games.scripts.game_engine import run_game
 
 def is_even(digit):
     return digit % 2

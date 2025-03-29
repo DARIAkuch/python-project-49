@@ -1,4 +1,4 @@
-from brain_games.engine.utils import (
+from brain_games.scripts.utils import (
     welcome_user, ask_question, compare_answer, ROUND_LIMIT
 )
 
