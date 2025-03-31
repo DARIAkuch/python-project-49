@@ -1,6 +1,10 @@
 from brain_games.scripts.utils import (
-    welcome_user, ask_question, compare_answer, ROUND_LIMIT
+    ROUND_LIMIT,
+    ask_question,
+    compare_answer,
+    welcome_user,
 )
+
 
 def run_game(logic, rule, name):
     name = welcome_user()

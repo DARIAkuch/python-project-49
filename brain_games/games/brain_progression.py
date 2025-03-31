@@ -4,7 +4,8 @@ from brain_games.scripts.game_engine import run_game
 
 
 def generate_progression(start, step, length):
-    return[start + i * step for i in range(length)]
+    return [start + i * step for i in range(length)]
+
 
 def make_question_answer():
     length = randint(5, 10)
@@ -22,6 +23,7 @@ def make_question_answer():
 def main():
     game_rule = 'What number is missing in the progression?'
     run_game(make_question_answer, game_rule, "Progression Game")
+
 
 if __name__ == '__main__':
     main()

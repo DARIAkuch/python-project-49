@@ -2,6 +2,7 @@ from random import randint
 
 from brain_games.scripts.game_engine import run_game
 
+
 def is_prime(n):
     if n <= 1:
         return False
@@ -9,6 +10,7 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
+
 
 def generate_question_and_answer():
     number = randint(0, 100)
@@ -20,6 +22,7 @@ def generate_question_and_answer():
 def main():
     game_rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     run_game(generate_question_and_answer, game_rule, "Prime Number Game")
+
 
 if __name__ == '__main__':
     main()

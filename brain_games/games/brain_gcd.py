@@ -1,10 +1,8 @@
 import random
-
 from math import gcd
 
-import prompt
-
 from brain_games.scripts.game_engine import run_game
+
 
 def generate_question():
     right_num = random.randint(1, 100)
@@ -18,5 +16,6 @@ def main():
     game_rule = 'Find the greatest common divisor of given numbers.'
     run_game(generate_question, game_rule, "Find Greatest Common Divisor")
 
+
 if __name__ == '__main__':
-        main()
+    main()
